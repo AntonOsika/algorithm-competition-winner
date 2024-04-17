@@ -1,5 +1,5 @@
 // Complete the Index page component for Johan Sannemo's book about winning algorithm competitions
-import { Box, Container, Heading, Text, Textarea, Button, VStack, Divider, SimpleGrid, useToast } from "@chakra-ui/react";
+import { Box, Container, Heading, Text, Textarea, Button, VStack, Divider, SimpleGrid, useToast, HStack } from "@chakra-ui/react";
 import { FaStar, FaPlay } from "react-icons/fa";
 import { useState } from "react";
 
@@ -48,14 +48,24 @@ const Index = () => {
           </Heading>
           <SimpleGrid columns={2} spacing={10} mt={4}>
             <Box>
-              <Text>
-                <FaStar color="gold" /> <FaStar color="gold" /> <FaStar color="gold" /> <FaStar color="gold" /> <FaStar color="gold" /> - "A must-read for anyone serious about competitive programming!"
-              </Text>
+              <HStack>
+                <FaStar color="gold" />
+                <FaStar color="gold" />
+                <FaStar color="gold" />
+                <FaStar color="gold" />
+                <FaStar color="gold" />
+                <Text>- "A must-read for anyone serious about competitive programming!"</Text>
+              </HStack>
             </Box>
             <Box>
-              <Text>
-                <FaStar color="gold" /> <FaStar color="gold" /> <FaStar color="gold" /> <FaStar color="gold" /> <FaStar color="gold" /> - "Changed the way I approach problems. Highly recommended!"
-              </Text>
+              <HStack>
+                <FaStar color="gold" />
+                <FaStar color="gold" />
+                <FaStar color="gold" />
+                <FaStar color="gold" />
+                <FaStar color="gold" />
+                <Text>- "Changed the way I approach problems. Highly recommended!"</Text>
+              </HStack>
             </Box>
           </SimpleGrid>
         </Box>
